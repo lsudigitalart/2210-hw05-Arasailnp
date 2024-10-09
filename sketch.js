@@ -1,4 +1,4 @@
-let v = 700
+let v = 700 
 let s = 750
 function setup() {
   createCanvas(800, 850);
@@ -19,15 +19,18 @@ function draw() {
   
   pop()
   //rectangle
-  rect(400,425, v,s)
+  let v = 750 *cos(frameCount * 0.01) + 50
+  rect(400,425, v, 700)
   noFill()
+ 
   push()
   //translate(Width/2, Height/2)
   
-  
+  scale(s)
   scale(v)
-  v = v+5
-  v = v- 10
+  
+  v = v* 1
+  v = v/1.5
   //rect(400,425,350,375)
   pop()
   
